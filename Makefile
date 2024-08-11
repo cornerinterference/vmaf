@@ -20,4 +20,4 @@ distclean: clean
 
 deps:
 	test -d $(VENV) || python3 -mvenv $(VENV)
-	$(VENV)/bin/pip install meson ninja cython numpy
+	$(VENV)/bin/pip install --upgrade meson ninja cython numpy setuptools
